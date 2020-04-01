@@ -8,10 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway+Dots|Raleway:300,400,500,600,700|Rubik:300,400,500,700,700i,900&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- TweenMax - GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="content">
+    <!-- <div class="wrapper"> -->
+        <!-- <div class="content"> -->
             <div id="spinner">
                 <div class="spinner-load">
                     <div class="bounce1"></div>
@@ -21,18 +23,66 @@
             </div>
             <div class="cursor"></div>
             <header id="header">
-                <a class="header__logo" href="index.html" target="_self">
-                    <span class="header__logo-name">  
-                        ya
-                    </span>
-                    <span class="header__logo-name">
-                        m
-                    </span>
+                <div class="header__logo">
+                    <a class="header__logo-link" href="index.html" target="_self">
+                        <span class="header__logo-name">  
+                            ya
+                        </span>
+                        <span class="header__logo-name">
+                            m
+                        </span>
+                    </a>
                 </div>
             </header>
-        </div>
-        <footer></footer>
-    </div>
+            <section class="introduce" id="introduce">
+                <div class="introduce__block">
+                    <h6 class="invite__block-title">Yana Mykhailovska - Freelance Web Developer</h6>
+                    <p>Hello!👋 I help startups create joyful digital experiences to connect with their users. 
+                        <span class="invite__block-blue">I recently helped amazing brands like ShopTherapy, QueSi ecc.</span>
+                    </p>
+                </div>
+            </section>
+            
+            
+            <section class="navigation-wrapper">
+                <div class="project-preview-wrapper">
+                    <div class="project-preview"></div>
+                </div>
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-1" href="#">
+                            <span data-text="Portfolio">Portfolio</span>
+                        </a>
+                    </li>
+                    <!-- <div class="project-overlay"></div> -->
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-2" href="#">
+                            <span data-text="About">About</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-3" href="#">
+                            <span data-text="Contacts">Contacts</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-4" href="#">
+                            <span data-text="Canals">Canals</span>
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link navigation-link-5" href="#">
+                            <span data-text="Asterisks">Asterisks</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <div class="progressbar"></div>
+
+        <!-- </div> -->
+        
+    <footer></footer>
+<!-- </div> -->
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
