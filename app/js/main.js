@@ -56,7 +56,7 @@ $(function(){
     //   });
 
     $(".navigation-link-1").hover(function() {
-        $(".project-preview").css({ "background-image": "url(images/content/img-1.jpg)" });
+        $(".project-preview").css({ "background-image": "url(images/content/img-11.jpg)" });
     });
 
     $(".navigation-link-2").hover(function() {
@@ -81,6 +81,7 @@ $(function(){
             wh = $(window).height();
         scrollPercent = (scroll / (dh - wh)) * 100;
         $(".progressbar").css("height", scrollPercent + "60%");
-    });  
+    });
+
     // TWEENMAX ANIMAtion end
 });

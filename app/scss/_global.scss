@@ -13,6 +13,7 @@ body{
 	position: relative;
 	min-width: 320px;
     overflow-x: hidden; 
+    background: #f4f4f9;
     // overflow-y: hidden;
 }
 *,
@@ -29,9 +30,7 @@ body{
     // border-right: 1px dotted $decor;
 }
 main{
-    background-color: #fff;
-    // background: url(../images/content/stars-bg2.svg) no-repeat top center / cover;
-    z-index: 1;
+    position: relative;
 }
 nav{
     display: block;
@@ -92,7 +91,7 @@ legend {
     white-space: normal;
 }
 ::selection {
-    background: rgba(238, 89, 59, 0.687);
+    background: #ccacc8;
 }
 input,
 select,
