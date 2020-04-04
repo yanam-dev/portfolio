@@ -13,7 +13,7 @@ body{
 	position: relative;
 	min-width: 320px;
     overflow-x: hidden; 
-    background: #f4f4f9;
+    background: #fff;
     // overflow-y: hidden;
 }
 *,
@@ -21,14 +21,14 @@ body{
 *:after{
     box-sizing: inherit;
 }
-.container{
-    max-width: 1440px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 15px;
-    // border-left: 1px dotted $decor;
-    // border-right: 1px dotted $decor;
-}
+// .container{
+//     max-width: 1440px;
+//     margin: 0 auto;
+//     width: 100%;
+//     padding: 0 15px;
+//     // border-left: 1px dotted $decor;
+//     // border-right: 1px dotted $decor;
+// }
 main{
     position: relative;
 }
@@ -148,7 +148,7 @@ h6{
 .wrapper{
     display: flex;
     flex-direction: column;
-    // min-height:100%;
+    min-height:100%;
 }
 .content{
     flex: 1 0 auto;
@@ -179,7 +179,7 @@ h6{
     position: fixed;
     top: 0;
     left: 85%;
-    background: #f4df4f;
+    background: #bababa;
     width: 1px;
     z-index: 1;
   }
@@ -222,7 +222,7 @@ h6{
 @keyframes navLinkFade {
     from{
         opacity: 0;
-        transform: translateX(200px);
+        transform: translateX(2040px);
     }
     to{
         opacity: 1;
@@ -288,3 +288,35 @@ h6{
     }
 }
 // PRELOADER end
+.transition-fade{
+    opacity: 1;
+    transition: .4s;
+    transform: translateX(0);
+    transform-origin: left;
+}
+html.is-animating .transition-fade{
+    opacity: 0;
+    transform: translateX(100%);
+}
+html.is-leaving .transition-fade{
+    transform: translateX(0);
+    opacity: 0;
+}
+
+// .page1, .page2{
+//     height: 100vh;
+//     position: absolute;
+//     width: 100%;
+// }
+// .slide-in{
+//     animation: slide-in 0.5s ease forwards;
+// }
+// @keyframes slide-in {
+//     from{
+//         transform: translateX(100%);
+//         visibility: visible;
+//     }
+//     to{
+//         transform: translateX(0); 
+//     }
+// }

@@ -5,13 +5,7 @@ $(function(){
     $spinner.fadeOut();
     $preloader.delay(350).fadeOut('slow');
     // PRELOADER end
-
-    // Smooth scrolling
-    // $("nav li a").click(function () {
-    //     elementClick = $(this).attr("href");
-    //     destination = $(elementClick).offset().top;
-    //     $("body,html").animate({scrollTop: destination }, 1000);
-    // });
+    const swup = new Swup();
     // CURSOR
     let mouseCursor = document.querySelector(".cursor");
     let navLinks = document.querySelectorAll(".main");
@@ -33,8 +27,8 @@ $(function(){
             link.classList.add("hovered-link");
         });
     });
+
     // TWEENMAX ANIMAtion
-    // $(document).ready(function() {
         TweenMax.set(".project-preview", { width: 0 });
         var tl = new TimelineLite();
 
@@ -53,14 +47,13 @@ $(function(){
                 ease: Expo.easeInOut
                 });
           });
-    //   });
 
     $(".navigation-link-1").hover(function() {
-        $(".project-preview").css({ "background-image": "url(images/content/img-11.jpg)" });
+        $(".project-preview").css({ "background-image": "url(images/content/img-2.jpg)" });
     });
 
     $(".navigation-link-2").hover(function() {
-        $(".project-preview").css({ "background-image": "url(images/content/img-2.jpg)" });
+        $(".project-preview").css({ "background-image": "url(images/content/img-11.jpg)" });
     });
 
     $(".navigation-link-3").hover(function() {
@@ -84,4 +77,38 @@ $(function(){
     });
 
     // TWEENMAX ANIMAtion end
+
+    // BARBA.js
+    // Barba.Pjax.start();
+
+    // var FadeTransition = Barba.BaseTransition.extend({
+    //     start: function() {
+
+    //         Promise.all([this.newContainerLoading, this.fadeOut()]).then(
+    //             this.fadeIn.bind(this)
+    //         );
+    //     },
+    //     fadeOut: function(){
+    //         this.oldContainer //home
+    //     },
+
+    //     fadeIn: function() {
+    //         this.newContainer.classList.add ("slide-in");
+
+    //         var that = this;
+
+    //         this.newContainer.addEventListener('animationend', function(){
+    //             that.newContainer.classList.remove('slide-in');
+    //             that.done();
+    //         });
+    //     }
+    // });
+
+    // Barba.Pjax.getTransition = function() {
+
+    //     return FadeTransition;
+    // };
+
+   // BARBA.js
+
 });
