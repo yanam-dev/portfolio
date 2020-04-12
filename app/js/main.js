@@ -5,7 +5,7 @@ $(function(){
     $spinner.fadeOut();
     $preloader.delay(350).fadeOut('slow');
     // PRELOADER end
-    const swup = new Swup();
+    
     // CURSOR
     let mouseCursor = document.querySelector(".cursor");
     let navLinks = document.querySelectorAll(".main");
@@ -27,7 +27,7 @@ $(function(){
             link.classList.add("hovered-link");
         });
     });
-
+    
     // TWEENMAX ANIMAtion
         TweenMax.set(".project-preview", { width: 0 });
         var tl = new TimelineLite();
@@ -49,23 +49,19 @@ $(function(){
           });
 
     $(".navigation-link-1").hover(function() {
-        $(".project-preview").css({ "background-image": "url(images/content/img-2.jpg)" });
+        $(".project-preview").css({ "background-image": "url(images/content/img-2.jpg)", "top": "5%" });
     });
 
     $(".navigation-link-2").hover(function() {
-        $(".project-preview").css({ "background-image": "url(images/content/img-11.jpg)" });
+        $(".project-preview").css({ "background-image": "url(images/content/img-11.jpg)", "top": "14%"});
     });
 
     $(".navigation-link-3").hover(function() {
-        $(".project-preview").css({ "background-image": "url(images/content/img-3.jpg)" });
+        $(".project-preview").css({ "background-image": "url(images/content/img-3.jpg)", "top": "28%" });
     });
 
     $(".navigation-link-4").hover(function() {
-        $(".project-preview").css({ "background-image": "url(images/content/img-4.jpg)" });
-    });
-
-    $(".navigation-link-5").hover(function() {
-        $(".project-preview").css({ "background-image": "url(images/content/img-5.jpg)" });
+        $(".project-preview").css({ "background-image": "url(images/content/img-4.jpg)", "top": "44%" });
     });
 
     $(window).scroll(function() {
@@ -75,7 +71,6 @@ $(function(){
         scrollPercent = (scroll / (dh - wh)) * 100;
         $(".progressbar").css("height", scrollPercent + "60%");
     });
-
     // TWEENMAX ANIMAtion end
 
     // BARBA.js
@@ -110,5 +105,5 @@ $(function(){
     // };
 
    // BARBA.js
-
+   const swup = new Swup();
 });

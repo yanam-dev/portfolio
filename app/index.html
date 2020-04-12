@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper transition-fade" id="swup">
         <div class="content">
             <div id="spinner">
                 <div class="spinner-load">
@@ -22,95 +22,106 @@
                 </div>
             </div>
             <div class="cursor"></div>
-            <main id="swup" class="transition-fade">            
+            <main>            
                 <header id="header">
-                <div class="header__logo">
-                    <a class="header__logo-link" href="index.html" target="_self">
-                        <span class="header__logo-name">  
-                            ya
-                        </span>
-                        <span class="header__logo-name">
-                            m
-                        </span>
-                    </a>
-                </div>
-            </header>
-            
-            <section class="introduce" id="introduce">
-                <div class="introduce__block">
-                    <h6 class="invite__block-title">Yana Mykhailovska - Freelance Web Developer</h6>
-                    <p>Hello!👋 I help startups create joyful digital experiences to connect with their users. 
-                        <span class="invite__block-blue">I recently helped amazing brands like ShopTherapy, QueSi ecc.</span>
-                    </p>
-                </div>
-            </section>
-            <section class="navigation-wrapper">
-                <div class="project-preview-wrapper">
-                    <div class="project-preview"></div>
-                </div>
-                <ul class="navigation-list">
-                    <li class="navigation-item">
-                        <a class="navigation-link navigation-link-1" href="works.html">
-                            <span data-text="Portfolio">Portfolio</span>
-                        </a>
-                    </li>
-                    <!-- <div class="project-overlay"></div> -->
-                    <li class="navigation-item">
-                        <a class="navigation-link navigation-link-2" href="#">
-                            <span data-text="About">About</span>
-                        </a>
-                    </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link navigation-link-3" href="#">
-                            <span data-text="Contacts">Contacts</span>
-                        </a>
-                    </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link navigation-link-4" href="#">
-                            <span data-text="Canals">Canals</span>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <div class="progressbar"></div>
-            <section class="promo">
-                <div class="promo__next">
-                    <div class="promo__content">
-                        <a href="/works.html" class="promo__item">
-                            <img src="../images/content/promo.jpg" class="promo__item-bg__pic" alt="">
-                            <span class="promo__item-about">
-                                <span class="promo__item-about__content">
-                                    <p>WO<br>
-                                    RK
-                                    </p>
-                                    <span>see projects</span>
-                                </span>
+                    <div class="header__logo">
+                        <a class="header__logo-link" href="index.html" target="_self">
+                            <span class="header__logo-name">  
+                                ya
+                            </span>
+                            <span class="header__logo-name">
+                                m
                             </span>
                         </a>
                     </div>
-                </div>
-            </section>
-            <section class="ambition" id="ambition">
-                <p class="one">Perfect</p>
-                <p class="two">Perfect</p>
-                <p><b>P</b>ERFECT</p>
-                <p>P<b>E</b>RFECT</p>
-                <p>PE<b>R</b>FECT</p>
-                <p class="non">PER<b>F</b>ECT</p>
-                <p>PERF<b>E</b>CT</p>
-                <p>PERFE<b>C</b>T</p>
-                <p>PERFEC<b>T</b></p>
-            </section>
-          </main> 
+                </header>
+                <section class="introduce" id="introduce">
+                    <div class="introduce__block">
+                        <h6 class="invite__block-title">Yana Mykhailovska - Freelance Web Developer</h6>
+                        <p>Hello!👋 I help startups create joyful digital experiences to connect with their users. 
+                            <span class="invite__block-blue">I recently helped amazing brands like ShopTherapy, QueSi ecc.</span>
+                        </p>
+                        <ul class="introduce__links d-flex">
+                            <li id="gt">
+                                <a href="#">
+                                    <span>GitHub</span>
+                                </a>
+                            </li>
+                            <li id="ig">
+                                <a href="#">
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="navigation-wrapper">
+                    <div class="project-preview-wrapper">
+                        <div class="project-preview"></div>
+                    </div>
+                    <ul class="navigation-list">
+                        <li class="navigation-item">
+                            <a class="navigation-link navigation-link-1" href="works.html">
+                                <span data-text="Portfolio">Portfolio</span>
+                            </a>
+                        </li>
+                        <!-- <div class="project-overlay"></div> -->
+                        <li class="navigation-item">
+                            <a class="navigation-link navigation-link-2" href="#">
+                                <span data-text="About">About</span>
+                            </a>
+                        </li>
+                        <li class="navigation-item">
+                            <a class="navigation-link navigation-link-3" href="#">
+                                <span data-text="Contacts">Contacts</span>
+                            </a>
+                        </li>
+                        <li class="navigation-item">
+                            <a class="navigation-link navigation-link-4" href="#">
+                                <span data-text="Canals">Canals</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <div class="progressbar"></div>
+                <section class="ambition" id="ambition">
+                    <p class="one">Perfect</p>
+                    <p class="two">Perfect</p>
+                    <p><b>P</b>ERFECT</p>
+                    <p>P<b>E</b>RFECT</p>
+                    <p>PE<b>R</b>FECT</p>
+                    <p class="non">PER<b>F</b>ECT</p>
+                    <p>PERF<b>E</b>CT</p>
+                    <p>PERFE<b>C</b>T</p>
+                    <p>PERFEC<b>T</b></p>
+                </section>
+                <aside class="promo">
+                    <div class="promo__next">
+                        <div class="promo__content">
+                            <a href="/works.html" class="promo__item">
+                                <img src="../images/content/promo.jpg" class="promo__item-bg__pic" alt="">
+                                <span class="promo__item-about">
+                                    <span class="promo__item-about__content">
+                                        <p>WO<br>
+                                        RK
+                                        </p>
+                                        <span>see projects</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </main> 
         </div>
-    <footer class="footer">
-        <div class="footer__credits d-flex align-items-center">
-            <a href="#"><b style="color:#f4df4f">///</b> 2020 &#169;Developed by Yana Mykhailovska 
-                <b style="color:#f4df4f">\\\</b>
-            </a>
-        </div>
-    </footer>
-</div>
+        <footer class="footer">
+            <div class="footer__credits d-flex align-items-center">
+                <a href="#">2020 &#169; Yana Mykhailovska. All rights reserved. 
+                    <b style="color:#f4df4f">///</b>
+                </a>
+            </div>
+        </footer>
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

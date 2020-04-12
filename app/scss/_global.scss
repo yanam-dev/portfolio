@@ -5,7 +5,7 @@ html,
 body{
     height: 100%;
     overflow-x: hidden; 
-    // scroll-behavior: smooth;
+    
 }
 body{
 	font-family: 'Rubik', sans-serif;
@@ -14,6 +14,8 @@ body{
 	min-width: 320px;
     overflow-x: hidden; 
     background: #fff;
+    scroll-behavior: smooth;
+    margin: 0;
     // overflow-y: hidden;
 }
 *,
@@ -30,6 +32,7 @@ body{
 //     // border-right: 1px dotted $decor;
 // }
 main{
+    height: 100vh;
     position: relative;
 }
 nav{
@@ -92,6 +95,7 @@ legend {
 }
 ::selection {
     background: #ccacc8;
+    color: rgb(179, 212, 252);
 }
 input,
 select,
@@ -149,6 +153,7 @@ h6{
     display: flex;
     flex-direction: column;
     min-height:100%;
+    overflow: hidden;
 }
 .content{
     flex: 1 0 auto;
@@ -172,9 +177,9 @@ h6{
     pointer-events: none;
     z-index: 2;
 }
-// ::-webkit-scrollbar {
-//     width: 0;
-//   }
+::-webkit-scrollbar {
+    width: 0;
+  }
 .progressbar {
     position: fixed;
     top: 0;
@@ -182,6 +187,23 @@ h6{
     background: #bababa;
     width: 1px;
     z-index: 1;
+    // &:before{
+    //     position: absolute;
+    //     content: 'GitHub';
+    //     font-size: 16px;
+    //     left: 0%;
+    //     top: 120%;
+    // }
+    // &:after{
+    //     position: absolute;
+    //     content: 'Instagram';
+    //     font-size: 14px;
+    //     background: -webkit-linear-gradient(73deg, #e84b29 66.81%, #fbe506 84.03%);
+    //     -webkit-background-clip: text;
+    //     -webkit-text-fill-color: transparent;
+    //     right: 0%;
+    //     top: 110%;
+    // }
   }
 // .link-grow{
 //     transform: scale(1);
@@ -252,14 +274,14 @@ h6{
 .spinner-load {
     text-align: center;
     position: absolute;
-	left: 47%;
-	top: 47%;
+	left: 50%;
+	top: 45%;
 	display: block;
 }
 .spinner-load > div {
     width: 18px;
     height: 18px;
-    background-color: rgba(221, 98, 73, 0.803);
+    background-color: #B3D4FC;
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
@@ -288,15 +310,17 @@ h6{
     }
 }
 // PRELOADER end
+// SWUP page transition start
 .transition-fade{
     opacity: 1;
-    transition: .4s;
+    transition: 500ms;
     transform: translateX(0);
     transform-origin: left;
 }
 html.is-animating .transition-fade{
     opacity: 0;
     transform: translateX(100%);
+    
 }
 html.is-leaving .transition-fade{
     transform: translateX(0);
