@@ -3,7 +3,7 @@ html{
 }
 html,
 body{
-    height: 100%;
+    min-height: 100%;
     overflow-x: hidden; 
     
 }
@@ -119,6 +119,7 @@ button:not(:disabled) {
     cursor: pointer;
     outline: none;
     border: none;
+    overflow: visible;
 }
 h1{
     font-family: 'Exo 2', sans-serif;
@@ -187,23 +188,6 @@ h6{
     background: #bababa;
     width: 1px;
     z-index: 1;
-    // &:before{
-    //     position: absolute;
-    //     content: 'GitHub';
-    //     font-size: 16px;
-    //     left: 0%;
-    //     top: 120%;
-    // }
-    // &:after{
-    //     position: absolute;
-    //     content: 'Instagram';
-    //     font-size: 14px;
-    //     background: -webkit-linear-gradient(73deg, #e84b29 66.81%, #fbe506 84.03%);
-    //     -webkit-background-clip: text;
-    //     -webkit-text-fill-color: transparent;
-    //     right: 0%;
-    //     top: 110%;
-    // }
   }
 // .link-grow{
 //     transform: scale(1);

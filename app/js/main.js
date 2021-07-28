@@ -27,7 +27,11 @@ $(function(){
             link.classList.add("hovered-link");
         });
     });
-    
+    // NAV MENU rightside
+    $('.menu__btn').on('click', function () {
+        $('.menu__btn').toggleClass('menu__btn--active');
+    });
+
     // TWEENMAX ANIMAtion
         TweenMax.set(".project-preview", { width: 0 });
         var tl = new TimelineLite();
