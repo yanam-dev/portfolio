@@ -30,7 +30,12 @@ $(function(){
     // NAV MENU rightside
     $('.menu__btn').on('click', function () {
         $('.menu__btn').toggleClass('menu__btn--active');
+        $('.navigation-list').toggleClass('navigation-list--active');        
     });
+    // $('.navigation-link').on('click', function () {
+    //     $('.menu__btn').removeClass('menu__btn--active');
+    //     $('.navigation-list').removeClass('navigation-list--active');
+    // });
 
     // TWEENMAX ANIMAtion
         TweenMax.set(".project-preview", { width: 0 });
@@ -53,7 +58,7 @@ $(function(){
           });
 
     $(".navigation-link-1").hover(function() {
-        $(".project-preview").css({ "background-image": "url(images/content/img-2.jpg)", "top": "5%" });
+        $(".project-preview").css({ "background-image": "url(images/content/img-2.jpg)", "top": "5%"});
     });
 
     $(".navigation-link-2").hover(function() {
@@ -61,11 +66,7 @@ $(function(){
     });
 
     $(".navigation-link-3").hover(function() {
-        $(".project-preview").css({ "background-image": "url(images/content/img-3.jpg)", "top": "28%" });
-    });
-
-    $(".navigation-link-4").hover(function() {
-        $(".project-preview").css({ "background-image": "url(images/content/img-4.jpg)", "top": "44%" });
+        $(".project-preview").css({ "background-image": "url(images/content/img-3.jpg)", "top": "28%"});
     });
 
     $(window).scroll(function() {
